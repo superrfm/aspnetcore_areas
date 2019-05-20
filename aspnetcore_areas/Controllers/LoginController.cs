@@ -16,5 +16,10 @@ namespace aspnetcore_areas.Controllers
         public IActionResult GravarCadastro(string perfil) {
             return RedirectToAction("Index", perfil, new { area = perfil });
         }
+
+        public IActionResult MesmoControllerName(string perfil)
+        {
+            return RedirectToAction("Index", "Home", new { area = perfil });
+        }
     }
 }

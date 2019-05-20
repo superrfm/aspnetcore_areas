@@ -9,12 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace aspnetcore_areas.Areas.Paciente.Controllers
 {
     [Area("Paciente")]
-    public class PacienteController : Controller
+    public class HomeController : Controller
     {
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View("Paciente/Index");
+            return View("~/Areas/Paciente/Views/Paciente/Index.cshtml");
         }
     }
 }
